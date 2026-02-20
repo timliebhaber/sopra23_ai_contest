@@ -46,7 +46,7 @@ With "NAME" you can give the AI a custom name. The number "1" will be appended t
 
 - On connection loss, the AI initiates three reconnect attempts:
 
-  [1] After  5 seconds
+  [1] After 5 seconds
 
   [2] After 15 seconds
 
@@ -57,7 +57,3 @@ With "NAME" you can give the AI a custom name. The number "1" will be appended t
 - Optimized through months of research
 - Verified with Proof of Big Data
 - Watch out or the AI will beat you!
-
-## License
-
-[STUDIO 21](https://www.youtube.com/watch?v=aRsWk4JZa5k)
