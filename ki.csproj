@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>ki</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+       <PackageReference Include="DotNetEnv" Version="2.5.0" />
+       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.0-preview.23280.1" />
+       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+       <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.15" />
+       <PackageReference Include="xunit" Version="2.5.0-pre.37" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".git\COMMIT_EDITMSG" />
+      <Content Include=".git\config" />
+      <Content Include=".git\description" />
+      <Content Include=".git\FETCH_HEAD" />
+      <Content Include=".git\HEAD" />
+      <Content Include=".git\hooks\applypatch-msg.sample" />
+      <Content Include=".git\hooks\commit-msg.sample" />
+      <Content Include=".git\hooks\fsmonitor-watchman.sample" />
+      <Content Include=".git\hooks\post-update.sample" />
+      <Content Include=".git\hooks\pre-applypatch.sample" />
+      <Content Include=".git\hooks\pre-commit.sample" />
+      <Content Include=".git\hooks\pre-merge-commit.sample" />
+      <Content Include=".git\hooks\pre-push.sample" />
+      <Content Include=".git\hooks\pre-rebase.sample" />
+      <Content Include=".git\hooks\pre-receive.sample" />
+      <Content Include=".git\hooks\prepare-commit-msg.sample" />
+      <Content Include=".git\hooks\push-to-checkout.sample" />
+      <Content Include=".git\hooks\update.sample" />
+      <Content Include=".git\index" />
+      <Content Include=".git\info\exclude" />
+      <Content Include=".git\logs\HEAD" />
+      <Content Include=".git\logs\refs\heads\main" />
+      <Content Include=".git\logs\refs\heads\master" />
+      <Content Include=".git\logs\refs\remotes\origin\HEAD" />
+      <Content Include=".git\logs\refs\remotes\origin\master" />
+      <Content Include=".git\objects\1a\f4bbbc4b785f99e52d1c4110d3fa155843eac9" />
+      <Content Include=".git\objects\27\90a1601e579f3e0c5a728b4c89307ad5d23de1" />
+      <Content Include=".git\objects\2e\048598dde582f689f79870e0918bad7e8b7313" />
+      <Content Include=".git\objects\30\cac8eccc730570147f89f4d46795e0bdcab519" />
+      <Content Include=".git\objects\4d\be62e1a60c6b7274ecc94f76c90d81ddbea6ac" />
+      <Content Include=".git\objects\56\5fcb0c8e7903898eb74168a8e1d36a6a13904b" />
+      <Content Include=".git\objects\60\3394349b115235ca70be819e66206439fc90c5" />
+      <Content Include=".git\objects\6c\edd6a078a6835afdd07bfe1449d41f97e6e083" />
+      <Content Include=".git\objects\7e\473a86fd26c53163f522a9fad57a4a001aed00" />
+      <Content Include=".git\objects\82\a203e252dae5b75957a91626272ec23699f5e7" />
+      <Content Include=".git\objects\83\26f08334efded07bbae234aef80c8da2cc0ad9" />
+      <Content Include=".git\objects\87\f49e5572c43b48ba4f7320f4b031f6ba9f044a" />
+      <Content Include=".git\objects\91\a8a13498eeb8830bd1ad5aa64231ece19f7dda" />
+      <Content Include=".git\objects\c9\69ee18b529118e1429baf1ebf1fc15dc9bfe03" />
+      <Content Include=".git\objects\da\c2c7de86c4abbd6f2b827c8d49dc3dca1901c6" />
+      <Content Include=".git\objects\e5\4f95eba9950524e07e8603a8c880af463733b1" />
+      <Content Include=".git\objects\ea\254feb2f318caac1943fda15ac78685f1d4b65" />
+      <Content Include=".git\objects\pack\pack-cbd98cf23845cbfa90cbd1f5a6a3bbba0c9286a5.idx" />
+      <Content Include=".git\objects\pack\pack-cbd98cf23845cbfa90cbd1f5a6a3bbba0c9286a5.pack" />
+      <Content Include=".git\packed-refs" />
+      <Content Include=".git\refs\heads\main" />
+      <Content Include=".git\refs\heads\master" />
+      <Content Include=".git\refs\remotes\origin\HEAD" />
+      <Content Include=".git\refs\remotes\origin\master" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include=".git\branches\" />
+      <Folder Include=".git\objects\info\" />
+      <Folder Include=".git\refs\tags\" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+{"playerName":"AI SUPER PLAYER 1","currentPosition":[5,7],"spawnPosition":[5,8],"direction":"SOUTH","character":"MERRY","lives":3,"lembasCount":2,"suspended":0,"reachedCheckpoints":0,"playedCards":[],"turnOrder":0}
