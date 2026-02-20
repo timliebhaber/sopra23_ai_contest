@@ -1,52 +1,63 @@
-# Battle of the Centerländ - TEAM 21 - KI 
+# Battle of the Centerländ - TEAM 21 - AI
 
-**SUPER PLAYER** ist in **C#** geschrieben und wird via [Docker](https://www.docker.com/) gestartet.
+> **Team 21** entry for the **Sopra23 AI Contest** at the **University of Ulm**
 
-Der Docker kann im [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/) gefunden werden.
+**SUPER PLAYER** is written in **C#** and runs via [Docker](https://www.docker.com/).
+
+The Docker image can be found in the [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/).
+
+## Basic Functionalities
+
+- **Search Tree-Based Decision Making**: Uses advanced search tree algorithms to evaluate game states and determine optimal moves
+- **Automated Game Playing**: Connects to game servers and plays autonomously without human intervention
+- **Reconnection Handling**: Automatically attempts to reconnect after connection loss
+- **Configurable Parameters**: Supports custom naming, connection settings, and delay configuration
+- **Multi-Instance Support**: Run multiple AI instances simultaneously with automatic naming
 
 ## Installation
 
-Dies ist ein Privates Repo, deshalb musst du dich ins das GitLab Registry einloggen.
+This is a private repository, so you need to log into the GitLab Registry.
 
-WICHTIG: Das funktioniert nur vom Uni Netzwerk oder dem Uni VPN!
+**IMPORTANT:** This only works from the University network or via the University VPN!
 
 ```bash
 docker login gitlab.uni-ulm.de:5050
 ```
 
-Pull den Docker container mit:
+Pull the Docker container with:
 
 ```bash
 docker pull gitlab.uni-ulm.de:5050/softwaregrundprojekt/2022-2023/ki-turnier-server
 ```
 
-## Benutzung
+## Usage
 
-Starte den Docker mit:
+Start the Docker container with:
 
 ```bash
-docker run --rm -it --network host -e IP=[ZIEL-IP] -e PORT=[ZIEL-PORT] -e NAME=AI_SUPER_PLAYER -e DELAY=3000 gitlab.uni-ulm.de:5050/softwaregrundprojekt/2022-2023/gruppenprojekt/group-21/ki:latest
+docker run --rm -it --network host -e IP=[TARGET-IP] -e PORT=[TARGET-PORT] -e NAME=AI_SUPER_PLAYER -e DELAY=3000 gitlab.uni-ulm.de:5050/softwaregrundprojekt/2022-2023/gruppenprojekt/group-21/ki:latest
 ```
-Gib bei "ZIEL-IP" und "ZIEL-Port" bitte die IP und Port ein, mit der die AI sich verbinden soll.
 
-Bei "NAME" kannst du der AI einen eigenen Namen geben. Dieser bekommt die Nummer "1" angehängt. Dieser Wert wird mit jeder weiteren AI erhöht.
+For "TARGET-IP" and "TARGET-PORT", enter the IP address and port the AI should connect to.
 
-## Fakten über die AI
+With "NAME" you can give the AI a custom name. The number "1" will be appended to it. This value increases with each additional AI instance.
 
-- Bei einem Verbindungsabbruch startet die AI drei Reconnect-Versuche:
+## Facts About the AI
 
-[1] Nach  5 Sekunden
+- On connection loss, the AI initiates three reconnect attempts:
 
-[2] Nach 15 Sekunden
+  [1] After  5 seconds
 
-[3] Nach 30 Sekunden
+  [2] After 15 seconds
 
-- Testabdeckung von bis zu 100%
-- Von Informatik-Experten entwickelt.
-- Durch monatelange Forschung optimiert.
-- Mit Proof of Big Data verifiziert.
-- Pass auf oder die AI besiegt dich.
+  [3] After 30 seconds
 
-## Lizenz
+- Test coverage of up to 100%
+- Developed by computer science experts
+- Optimized through months of research
+- Verified with Proof of Big Data
+- Watch out or the AI will beat you!
+
+## License
 
 [STUDIO 21](https://www.youtube.com/watch?v=aRsWk4JZa5k)
